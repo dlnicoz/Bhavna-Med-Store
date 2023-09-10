@@ -14,7 +14,7 @@ function Create() {
   const handleSubmit = (event) => {
   event.preventDefault();
   axios
-  .post("http://localhost:3000/users" ,values)
+  .post("https://bhavna-med-store.onrender.com/users" ,values)
   .then((res) => {
     console.log(res);
     navigate('/')

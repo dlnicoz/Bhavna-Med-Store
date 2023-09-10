@@ -14,7 +14,7 @@ function Update() {
 const {id} = useParams();
   useEffect(() => {
     axios
-      .get("http://localhost:3000/users/"+ id)
+      .get("https://bhavna-med-store.onrender.com/users/"+ id)
       .then(res => setvalues(res.data))
       .catch(err => console.log(err));
   }, [])
@@ -23,7 +23,7 @@ const {id} = useParams();
   const handleUpdate= (event) => {
     event.preventDefault();
     axios
-  .put("http://localhost:3000/users/"+id ,values)
+  .put("https://bhavna-med-store.onrender.com/users/"+id ,values)
   .then((res) => {
     console.log(res);
     navigate('/')

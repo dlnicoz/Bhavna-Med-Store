@@ -8,7 +8,7 @@ function Read() {
 const {id} = useParams();
   useEffect(() => {
     axios
-      .get("http://localhost:3000/users/"+ id)
+      .get("https://bhavna-med-store.onrender.com/users/"+ id)
       .then(res => setData(res.data))
       .catch(err => console.log(err));
   }, [])

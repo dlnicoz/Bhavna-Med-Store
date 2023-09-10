@@ -8,7 +8,7 @@ function Home() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/users")
+      .get("https://bhavna-med-store.onrender.com/users")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, [])
@@ -16,7 +16,7 @@ function Home() {
   const handleDelete = (id) => {
     const confirm = window.confirm('would you like to delete ?')
     if(confirm) {
-      axios.delete('http://localhost:3000/users/'+id)
+      axios.delete('https://bhavna-med-store.onrender.com/users'+id)
       .then(res => {
       location.reload(); 
       }).catch(err => console.log(err))
