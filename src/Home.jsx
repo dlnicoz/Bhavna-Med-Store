@@ -40,6 +40,7 @@ function Home() {
             <th>Name</th>
             <th>Desc</th>
             <th>Phone</th>
+            <th>Date</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -50,6 +51,7 @@ function Home() {
               <td>{d.name}</td>
               <td>{d.desc}</td>
               <td>{d.phone}</td>
+              <td>{d.date}</td>
               <td>
               <Link to={`/read/${d.id}`} className="btn btn-sm btn-info me-2">Read</Link>
                 <Link to={`/update/${d.id}`} className="btn btn-sm btn-primary me-2">Edit</Link>

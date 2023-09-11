@@ -7,7 +7,8 @@ function Create() {
   const [values, setvalues] = useState({
     name: '',
     desc: '',
-    phone: ''
+    phone: '',
+    date: ''
   })
 
   const navigate = useNavigate();
@@ -57,6 +58,19 @@ function Create() {
               onChange={e => setvalues({...values , phone: e.target.value})}
 
             />
+            
+          </div>
+          <div className="mb-2">
+            <label htmlFor="date">Date:</label>
+            <input
+              type="text"
+              name="date"
+              className="form-control"
+              placeholder="Enter date"
+              onChange={e => setvalues({...values , date: e.target.value})}
+
+            />
+            
           </div>
           <button className="btn btn-success">Submit</button>
           <Link to="/" className="btn btn-primary ms-3">Back</Link>

@@ -8,7 +8,8 @@ function Update() {
   const [values, setvalues] = useState({
     name: '',
     desc: '',
-    phone: ''
+    phone: '',
+    date: ''
   })
 
 const {id} = useParams();
@@ -68,6 +69,18 @@ const {id} = useParams();
             placeholder="Enter Phone"
             value={values.phone}
             onChange={e => setvalues({...values , phone: e.target.value})}
+
+          />
+        </div>
+        <div className="mb-2">
+          <label htmlFor="date">Date:</label>
+          <input
+            type="text"
+            name="date"
+            className="form-control"
+            placeholder="Enter date"
+            value={values.date}
+            onChange={e => setvalues({...values , date: e.target.value})}
 
           />
         </div>

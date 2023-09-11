@@ -25,6 +25,9 @@ const {id} = useParams();
         <div className="mb-2">
           <strong>Phone: {data.phone}</strong>
         </div>
+        <div className="mb-2">
+          <strong>Date: {data.date}</strong>
+        </div>
         <Link to={`/update/${id}`} className="btn btn-success">Edit</Link>
         <Link to='/' className="btn btn-primary ms-3">Back</Link>
       </div>
