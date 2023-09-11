@@ -16,9 +16,9 @@ function Home() {
   const handleDelete = (id) => {
     const confirm = window.confirm('would you like to delete ?')
     if(confirm) {
-      axios.delete('https://bhavna-med-store.onrender.com/users'+id)
+      axios.delete('https://bhavna-med-store.onrender.com/users/'+id)
       .then(res => {
-      location.reload(); 
+      location.reload();
       }).catch(err => console.log(err))
     }
   }
