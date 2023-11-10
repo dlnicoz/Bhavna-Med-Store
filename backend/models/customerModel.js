@@ -7,18 +7,19 @@ const customerSchema = new Schema({
     type: String,
     required: true
   },
-  desc: {
-    type: String,
-    required: true
-  },
   phone: {
     type: Number,
     required: true
   },
-  date: {
-    type: Number,
-    required: false
+  description: {
+    type: String,
+    required: true
+  },
+  user_id: {
+    type: String,
+    required: true
   }
 }, { timestamps: true })
 
 module.exports = mongoose.model('Customer', customerSchema)
+
